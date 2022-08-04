@@ -1,0 +1,456 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*::before,
+*::after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+
+input,
+button,
+textarea {
+   font-size: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+}
+
+body {
+   font-size: 14px;
+   font-family: 'Rubik';
+   background-color: #1a1c24;
+}
+
+
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+
+
+[class*="__container"] {
+   max-width: 1087px;
+   margin: 0px auto;
+   padding: 0px 15px;
+
+}
+
+
+
+[class*="_fon"] {
+
+   background: linear-gradient(to bottom, transparent, #1a1c24), url(https://fsportfolio-e09ce.web.app/images-icons/typewriter2.jpg);
+   background-position: center;
+   background-size: cover;
+   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+   filter: alpha(opacity=95);
+   opacity: 0.95;
+   width: 100%;
+   height: 100vh;
+   color: #e8e8e9;
+
+}
+
+/*PC*/
+@media(max-width: 1087px) {
+   [class*="__container"] {
+      max-width: 970px;
+
+   }
+}
+
+/*Table*/
+@media(max-width: 991.98px) {
+   [class*="__container"] {
+      max-width: none;
+
+   }
+}
+
+/*mobile*/
+@media(max-width: 767.98px) {
+   [class*="__container"] {
+      max-width: 750px;
+   }
+}
+
+/*.header__fon {
+   display: table;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(180deg, transparent, #1a1c24), url(https://fsportfolio-e09ce.web.app/images-icons/typewriter2.jpg);
+   background-position: 50%;
+   background-size: cover;
+   position: relative;
+}
+*/
+.header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+}
+
+
+.header__container {
+   display: flex;
+   min-height: 114px;
+   align-items: center;
+}
+
+
+.header__logo {
+   font-family: 'Special Elite';
+   display: flex;
+   font-size: 40px;
+   font-weight: 900;
+   padding: 0px 50px 0px 0px;
+   color: #a8a6a7;
+}
+
+.menu {
+
+   display: flex;
+   justify-content: center;
+}
+
+.header__menu {
+
+   flex: 1 1 auto;
+}
+
+.menu__list {
+   display: flex;
+   gap: 40px;
+
+}
+
+.menu__item {
+   font-family: 'Raleway';
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 12px;
+
+}
+
+.menu__link {
+   color: #f3f3f4;
+   transition: text-decoration 0.3s ease 0s;
+   transition: color 0.3s ease 0s;
+}
+
+
+
+.menu__link:hover {
+   text-decoration: underline;
+   color: rgb(151, 151, 249);
+}
+
+/*=====================================================*/
+.main {
+   flex: 1 1 auto;
+}
+
+
+.main__container {
+   padding: 220px 0px 0px 180px;
+   color: #dddddf;
+
+}
+
+.block_text {
+   font-family: 'Montserrat';
+   font-size: 24px;
+   margin-block-end: 24px;
+
+}
+
+.main__h1 {
+   font-family: 'Montserrat';
+   font-size: 64px;
+   font-weight: 700
+}
+
+.main__Iam_red {
+   display: inline-flex;
+   margin-block-start: 30px;
+   color: rgb(108, 0, 0);
+   font-size: 40px;
+   font-family: 'Special Elite';
+   height: 100vh;
+}
+
+
+.console-underscore {
+   display: inline-block;
+   position: relative;
+   top: -0.14em;
+   left: 10px;
+}
+
+.typed-cursor {
+   display: inline-flex;
+   margin-block-start: 30px;
+   color: rgb(108, 0, 0);
+   font-size: 30px;
+   font-family: 'Special Elite';
+   opacity: 1;
+   font-weight: 200;
+   animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+   0% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@media (max-width: 991.8px) {
+   .main__container::before {
+      right: 185px;
+      border-radius: 20px 0px 0px 20px;
+   }
+}
+
+@media (max-width: 767.8px) {
+   .main__container::before {
+      display: none;
+   }
+}
+
+/* ====================================================== */
+.abomme__container {
+   padding: 0px 0px 0px 180px;
+}
+
+.ab_me_color {
+
+   color: rgb(108, 0, 0);
+   font-size: 40px;
+   font-family: 'Special Elite';
+   margin-block-end: 35px;
+
+
+}
+
+.zerta__container {
+   content: "";
+   background: linear-gradient(90deg, #b2b2b2, transparent);
+   display: flex;
+   width: 70%;
+   height: 3px;
+   margin: 0px;
+   margin-block-end: 10px;
+}
+
+.line {
+   font-size: 23px;
+   width: 40rem;
+   flex: 1 1 auto;
+   color: #dddddf;
+   line-height: 1.6rem;
+}
+
+.line_heid {
+   line-height: 1.6rem;
+   font-size: 23px;
+   font-family: "Montserrat";
+   margin-block-start: 20px;
+   margin-block-end: 30px;
+   height: 100vh;
+}
+
+.line_heid_red {
+   background: linear-gradient(0deg, #c1403d 10%, transparent 30%);
+}
+
+/*==============================================*/
+.PROECT__container {
+   padding: 0px 10px 100px 180px;
+
+}
+
+.ab_me_color {}
+
+.project {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.proimg {
+
+   padding: 15px 0px 0px 10px;
+   flex: 0 1 50%;
+}
+
+
+.proimg img {
+   max-width: 100%;
+}
+
+.sait {
+   display: block;
+
+}
+
+
+.opes {
+   font-size: "Montserrat";
+   padding: 20px 1px 20px 0px;
+   background-color: #f8f8f9;
+   flex: 0 1 50%;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   color: #1a1c24;
+   border-radius: 2%;
+   text-align: right;
+}
+
+
+.L {
+
+   font-weight: 700;
+   font-size: 24px;
+}
+
+.line_heid_ {
+   line-height: 1.6rem;
+   font-size: 23px;
+   font-family: "Montserrat";
+   margin-block-start: 20px;
+   margin-block-end: 30px;
+}
+
+/*==============================================*/
+.Get__container {}
+
+.Get {
+   padding: 600px 10px 100px 160px;
+   font-family: "Montserrat";
+}
+
+.in {
+
+   text-align: center;
+}
+
+.Touch {
+   font-weight: 900;
+   font-size: 30px;
+}
+
+.email {}
+
+.heid_sel {
+   flex: 1 1 100%;
+}
+
+.touch {
+   text-align: center;
+}
+
+.heid_sel_bl {
+   color: #ffff;
+   line-height: 1.6rem;
+   font-size: 23px;
+   font-family: "Montserrat";
+   margin-block-start: 20px;
+   margin-block-end: 30px;
+}
+
+/*====================================================*/
+.footer__container {}
+
+.Design {
+   padding: 100px 10px 100px 160px;
+}
+
+
+.Alexander {
+   text-align: center;
+   color: #b83e3c;
+   font-size: 18px;
+   font-family: 'Special Elite';
+}
