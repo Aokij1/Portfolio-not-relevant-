@@ -327,7 +327,6 @@ body {
 
 .line__container {
    font-size: 23px;
-   width: 40rem;
    flex: 1 1 auto;
    color: #dddddf;
    line-height: 1.6rem;
